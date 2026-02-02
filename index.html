@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZAAN - Sosial Media</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        background: radial-gradient(circle at top, #2a003f, #000000 70%);
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        overflow: hidden;
+    }
+
+    h1 {
+        position: absolute;
+        top: 40px;
+        font-size: 36px;
+        letter-spacing: 3px;
+        color: #c77dff;
+        text-shadow: 0 0 15px #9d4edd;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 80%;
+        max-width: 300px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .btn {
+        background: linear-gradient(135deg, #5a189a, #9d4edd);
+        border: none;
+        padding: 15px;
+        border-radius: 12px;
+        color: white;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        box-shadow: 0 0 15px rgba(157, 78, 221, 0.5);
+        transition: transform 0.2s, box-shadow 0.2s;
+        user-select: none;
+    }
+
+    .btn:active {
+        animation: shake 0.3s;
+        box-shadow: 0 0 25px rgba(157, 78, 221, 1);
+    }
+
+    @keyframes shake {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-5px); }
+        50% { transform: translateX(5px); }
+        75% { transform: translateX(-5px); }
+        100% { transform: translateX(0); }
+    }
+
+    .glow {
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: radial-gradient(circle, rgba(157,78,221,0.25), transparent 70%);
+        filter: blur(40px);
+        animation: float 6s ease-in-out infinite;
+    }
+
+    .glow:nth-child(1) { top: 10%; left: 10%; }
+    .glow:nth-child(2) { bottom: 10%; right: 10%; animation-delay: 3s; }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="glow"></div>
+<div class="glow"></div>
+
+<h1>ZAAN</h1>
+
+<div class="container">
+    <!-- GANTI LINK DI SINI -->
+    <a href="https://whatsapp.com/channel/0029Vb6TGFU6buMFjDcdmZ3X" target="_blank">
+        <div class="btn">Saluran WhatsApp</div>
+    </a>
+
+    <a href="https://t.me/Zannspiw" target="_blank">
+        <div class="btn">Telegram</div>
+    </a>
+
+    <a href="https://wa.me/6282392368932" target="_blank">
+        <div class="btn">Chat WhatsApp</div>
+    </a>
+</div>
+
+</body>
+</html>
